@@ -15,4 +15,10 @@ for d in data:
 		new.append(d.strip())
 		print (new)
 print ('一共有',len(new),'筆留言長度介於2到50之間')
-		
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print ('一共有',len(good),'筆留言中提到good')
+print (good[0])		
